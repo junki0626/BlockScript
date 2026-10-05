@@ -3,37 +3,27 @@
 
 ### Syntax & Examples
 
-* **Basic Command (example)**
-  ```json
-  ["cmd", "***"]
-  ```
-
-* **Print to Console (print)**
+* **Print to Console (log)**
   ```json
   ["log", "Hello, World!"]
   ```
 
-* **Conditional Statement (if)**
+* **Variable Assignment (set)**
   ```json
-  [ 
-    ["set", "a", 1], 
-    ["if", "a", 2, ["log", "false"]], 
-    ["if", "a", 1, ["log", "true"]] 
-  ]
+  ["set", "score", 100]
+  ```
+
+* **Increment (+)**
+  ```json
+  ["+", "score"]
+  ```
+
+* **Decrement (-)**
+  ```json
+  ["-", "score"]
   ```
 
 * **Loop Statement (while)**
   ```json
-  [
-    ["set", "i", 1], 
-    ["while", "i", 10, ["log", "while"]]
-  ]
-  ```
-
-* **Variable Assignment & Logging (set)**
-  ```json
-  [
-    ["set", "score", 100], 
-    ["log", "score"]
-  ]
+  ["while", "i", 0, ["-", "i"]]
   ```
