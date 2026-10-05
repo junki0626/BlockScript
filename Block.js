@@ -27,7 +27,7 @@ function run(code) {
 
 const file = process.argv[2];
 if (path.extname(file) !== '.block') {
-    console.error("Err : Only files with .ks extension are allowed.");
+    console.error("Err : Only files with .block extension are allowed.");
     process.exit(1);
 }
 
