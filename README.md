@@ -8,7 +8,7 @@ Run the script using Node.js:
 node Block.js example.block
 ```
 
-## 📋 Syntax & Examples
+## 📋 Syntax
 
 ### Print to Console (`log`)
 Prints a literal string or the value of a variable.
