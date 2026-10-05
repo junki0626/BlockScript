@@ -1,11 +1,11 @@
-# BlockScript (or Your Language Name)
+# BlockScript 
 
 A minimalist, **Turing-complete** programming language powered by JSON-style syntax and Node.js.
 
 ## 🚀 Execution
 Run the script using Node.js:
 ```bash
-node Block.js example.ks
+node Block.js example.block
 ```
 
 ## 📋 Syntax & Examples
