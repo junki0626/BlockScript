@@ -14,10 +14,10 @@ node Block.js example.block
 ```
 
 ## 📋 Syntax & 6 Commands
-- `["log", "var"]` : 변수값 출력
-- `["set", "var", val]` : 변수 선언 및 값 할당
-- `["+", "var"]` : 변수 1 증가
-- `["-", "var"]` : 변수 1 감소
-- `["*", "var1", "var2"]` : var1에 var2를 곱해서 다시 var1에 저장
+- `["log", "a"]` : a값 출력
+- `["set", "a", num]` : 변수 선언 및 값 할당
+- `["+", "a"]` : a 1 증가
+- `["-", "a"]` : a 1 감소
+- `["*", "a", "b"]` : a에 b를 곱해서 다시 a에 저장
 
-- `["while", "var", val, [commands]]` : 조건 만족 시까지 루프 수행
+- `["while", "a", num, [commands]]` : 조건 만족 시까지 루프 수행
