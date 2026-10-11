@@ -7,20 +7,23 @@ function run(code) {
     const cmd = code[0];
 
     if (cmd == "log") {
-        console.log(vars[code[1]] !== undefined ? vars[code[1]] : code[1]);
+        console.log(vars[code[1]]);
     }
     if (cmd == "set") {
         vars[code[1]] = code[2];
     }
     if (cmd == "+") {
-        if (vars[code[1]] !== undefined) vars[code[1]]++;
+        vars[code[1]]++;
     }
     if (cmd == "-") {
-        if (vars[code[1]] !== undefined) vars[code[1]]--;
+        vars[code[1]]--;
+    }
+    if (cmd == "*") {
+        vars[code[1]] *= vars[code[2]];
     }
     if (cmd == "while") {
         while (vars[code[1]] != code[2]) {
-            run(code[3]);
+            code[3].forEach(sub => run(sub));
         }
     }
 }
